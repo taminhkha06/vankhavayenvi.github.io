@@ -218,8 +218,7 @@
         </section>
 
         <section class="event-section section-padding p-t-0 section-bg-color" id="events">
-            <div class="top-area"
-                style="background: url(https://cdn.biihappy.com/ziiweb/default/template/6174ef83a62963738e0a367c/95c640880776793781cf577ef7fbf1f8.jpg) center center/cover no-repeat local;">
+            <div class="top-area" style="background: url(./images/gallery6.jpg) center center/cover no-repeat local;">
                 <h2>Sự Kiện Cưới</h2>
                 <p class="">...tình yêu không phải là nhìn chằm chằm vào nhau, mà là nhìn chằm chằm về cùng một hướng...
                 </p>
@@ -622,6 +621,21 @@
 
             // Tạo nhiều trái tim mỗi 300ms
             setInterval(createHeart, 300);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("background-music");
+
+            // Bắt buộc nhạc chạy sau khi người dùng tương tác (click hoặc di chuột)
+            function playAudio() {
+                audio.play();
+                document.removeEventListener("click", playAudio);
+                document.removeEventListener("mousemove", playAudio);
+            }
+
+            document.addEventListener("click", playAudio);
+            document.addEventListener("mousemove", playAudio);
         });
     </script>
     <script
