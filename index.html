@@ -21,7 +21,6 @@
     <meta property="og:image:url" content="">
     <meta property="og:image:secure_url" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://iwedding.info/favicon.ico">
     <link href="https://weddingtkha.iwedding.info/templates/template15/css/libs.css?v=20250312" rel="stylesheet">
     <link href="https://weddingtkha.iwedding.info/common/calendar.css?v=20250312" rel="stylesheet">
     <link href="https://weddingtkha.iwedding.info/templates/template15/css/style.css?v=20250312" rel="stylesheet">
@@ -623,21 +622,6 @@
 
             // Tạo nhiều trái tim mỗi 300ms
             setInterval(createHeart, 300);
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let audio = document.getElementById("background-music");
-
-            // Bắt buộc nhạc chạy sau khi người dùng tương tác (click hoặc di chuột)
-            function playAudio() {
-                audio.play();
-                document.removeEventListener("click", playAudio);
-                document.removeEventListener("mousemove", playAudio);
-            }
-
-            document.addEventListener("click", playAudio);
-            document.addEventListener("mousemove", playAudio);
         });
     </script>
     <script
