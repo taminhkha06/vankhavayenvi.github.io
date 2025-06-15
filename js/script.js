@@ -951,3 +951,9 @@
     });
 
 })(window.jQuery);
+document.querySelectorAll('.slide-bg-image').forEach(function (el) {
+    var bg = el.getAttribute('data-background');
+    if (bg) {
+        el.style.backgroundImage = 'url(' + bg + ')';
+    }
+});
